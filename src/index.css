@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../public/fonts/Avenir.ttc) format("truetype");
+}
+@font-face {
+  font-family: "ITCAvantGardeGothicPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../public/fonts/ITCAvantGardePro/ITCAvantGardePro-Bk.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: "ITCAvantGardeGothicPro";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../public/fonts/ITCAvantGardePro/ITCAvantGardePro-Md.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: "ITCAvantGardeGothicPro";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../public/fonts/ITCAvantGardePro/ITCAvantGardePro-Demi.otf)
+    format("opentype");
+}
+@font-face {
+  font-family: "ITCAvantGardeGothicPro";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../public/fonts/ITCAvantGardePro/ITCAvantGardePro-Bold.otf)
+    format("opentype");
+}

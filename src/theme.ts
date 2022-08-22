@@ -1,14 +1,22 @@
-import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
+import { createTheme } from "@mui/material/styles";
+import { red } from "@mui/material/colors";
 
 // A custom theme for this app
 const theme = createTheme({
+  typography: {
+    fontFamily: "ITCAvantGardeGothicPro, Arial, sans-serif",
+  },
+  components: {
+    MuiLink: {
+      defaultProps: { color: "#000000", fontFamily: "Avenir", fontWeight: 900 },
+    },
+  },
   palette: {
     primary: {
-      main: '#556cd6',
+      main: "#556cd6",
     },
     secondary: {
-      main: '#19857b',
+      main: "#19857b",
     },
     error: {
       main: red.A400,
