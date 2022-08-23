@@ -6,6 +6,12 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
+interface Props {
+  title: string;
+  price: string;
+  src: string;
+}
+
 const Circle = styled("span")`
   height: 12px;
   width: 12px;
@@ -14,24 +20,27 @@ const Circle = styled("span")`
   border-radius: 50%;
   display: inline-block;
   margin-left: 8px;
+  @media (max-width: 599px) {
+    margin-left: 1px;
+    margin-right: 7px;
+  }
   &.active {
-    border: 1.5px solid #ffffff;
-    outline: 1px solid #000000;
+    border: 1.5px solid #fff;
+    box-shadow: 0 0 0 1px #000;
   }
 `;
 
-export default function BasicCard({ title, price, src }: any) {
+export default function BasicCard({ title, price, src }: Props) {
   return (
-    <Card elevation={0} sx={{ mr: { xs: 1.5, sm: 4 }, flex: "0 0 auto" }}>
-      <CardMedia
-        sx={{
-          width: "100%",
-          height: { xs: 200, sm: 310 },
-        }}
-        component="img"
-        image={src}
-        alt=""
-      />
+    <Card
+      elevation={0}
+      sx={{
+        mr: { xs: 1.5, sm: 4 },
+        flex: "0 0 auto",
+        width: { xs: 140, sm: 230 },
+      }}
+    >
+      <CardMedia component="img" image={src} alt={title} />
       <CardContent sx={{ p: 0 }}>
         <Typography
           fontFamily="Avenir"
@@ -42,6 +51,7 @@ export default function BasicCard({ title, price, src }: any) {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
             justifyContent: "space-between",
           }}
         >
