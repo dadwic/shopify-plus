@@ -7,8 +7,10 @@ const theme = createTheme({
     fontFamily: "ITCAvantGardeGothicPro, Arial, sans-serif",
   },
   components: {
-    MuiLink: {
-      defaultProps: { color: "#000000", fontFamily: "Avenir", fontWeight: 900 },
+    MuiButton: {
+      defaultProps: {
+        sx: { fontFamily: "Avenir", fontWeight: 900 },
+      },
     },
   },
   palette: {

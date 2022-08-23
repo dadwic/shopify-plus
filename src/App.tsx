@@ -1,19 +1,50 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import BasicCard from "components/BasicCard";
 import type { Theme } from "@mui/material";
+
+const data = [
+  {
+    src: "/img/bg-1.jpg",
+    title: "365 Signature Hoodie",
+    price: "€33.95",
+  },
+  {
+    src: "/img/bg-2.jpg",
+    title: "Organic Skinny High Waist Jeans",
+    price: "€33.95",
+  },
+  {
+    src: "/img/bg-3.jpg",
+    title: "Organic Skinny High Waist Jeans",
+    price: "€33.95",
+  },
+  {
+    src: "/img/bg-1.jpg",
+    title: "365 Signature Hoodie",
+    price: "€33.95",
+  },
+  {
+    src: "/img/bg-2.jpg",
+    title: "Organic Skinny High Waist Jeans",
+    price: "€33.95",
+  },
+];
 
 const Text = (
   <Box
     sx={{
-      mt: { xs: 31, sm: 8 },
-      mx: { xs: 3, sm: 4 },
+      mt: { xs: 31, sm: 12 },
+      mr: { xs: 11, sm: 21 },
+      ml: { xs: 3, sm: 15 },
       display: "flex",
       flexDirection: "column",
+      alignItems: "flex-start",
     }}
   >
     <Typography
@@ -38,16 +69,28 @@ const Text = (
       At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit
       tincidunt semper eu proin leo gravida cursus.
     </Typography>
-    <Link sx={{ color: { xs: "#fff", sm: "#000" } }}>
+    <Button
+      sx={{
+        color: { xs: "#fff", sm: "#000" },
+        borderBottom: "1px solid #000",
+        borderRadius: 0,
+        fontSize: "12.8px",
+        lineHeight: "17.48px",
+      }}
+    >
       Shop all everyday items
-    </Link>
+    </Button>
   </Box>
 );
 
 export default function App() {
   const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
   return (
-    <Grid container component="main" sx={{ height: "100vh" }}>
+    <Grid
+      container
+      component="main"
+      sx={{ height: "100vh", overflowX: "hidden" }}
+    >
       <Grid
         item
         xs={12}
@@ -65,8 +108,23 @@ export default function App() {
       >
         {matches && Text}
       </Grid>
-      <Grid item xs={12} sm={6} px={15} py={12} component={Paper} square>
-        {!matches && Text}
+      <Grid item xs={12} sm={6} component={Paper} square>
+        <Box pr={15}>{!matches && Text}</Box>
+        <Box
+          ml={15}
+          sx={{
+            mt: 8.5,
+            width: "100%",
+            display: "flex",
+            overflowX: "scroll",
+            overflowY: "hidden",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {data.map((item, key) => (
+            <BasicCard {...item} key={key} />
+          ))}
+        </Box>
       </Grid>
     </Grid>
   );
