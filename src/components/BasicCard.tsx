@@ -10,7 +10,7 @@ import type { Product } from "types";
 const Circle = styled("span")`
   height: 12px;
   width: 12px;
-  cursor: auto;
+  cursor: pointer;
   background-color: ${(props) => props.color};
   border-radius: 50%;
   display: inline-block;
