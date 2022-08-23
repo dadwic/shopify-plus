@@ -1,8 +1,14 @@
 @font-face {
   font-family: "Avenir";
   font-style: normal;
-  font-weight: 900;
-  src: url(../public/fonts/Avenir.ttc) format("truetype");
+  font-weight: 400;
+  src: url(../public/fonts/Avenir/Avenir-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../public/fonts/Avenir/Avenir-Heavy.ttf) format("truetype");
 }
 @font-face {
   font-family: "ITCAvantGardeGothicPro";

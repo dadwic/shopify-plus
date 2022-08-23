@@ -72,7 +72,7 @@ const Text = (
     <Button
       sx={{
         color: { xs: "#fff", sm: "#000" },
-        borderBottom: "1px solid #000",
+        borderBottom: { xs: "1px solid #fff", sm: "1px solid #000" },
         borderRadius: 0,
         fontSize: "12.8px",
         lineHeight: "17.48px",
@@ -89,7 +89,7 @@ export default function App() {
     <Grid
       container
       component="main"
-      sx={{ height: "100vh", overflowX: "hidden" }}
+      sx={{ height: { xs: "auto", sm: "100vh" }, overflowX: "hidden" }}
     >
       <Grid
         item
@@ -109,16 +109,16 @@ export default function App() {
         {matches && Text}
       </Grid>
       <Grid item xs={12} sm={6} component={Paper} square>
-        <Box pr={15}>{!matches && Text}</Box>
+        {!matches && <Box pr={15}>{Text}</Box>}
         <Box
-          ml={15}
           sx={{
-            mt: 8.5,
             width: "100%",
             display: "flex",
             overflowX: "scroll",
             overflowY: "hidden",
             whiteSpace: "nowrap",
+            ml: { xs: 3, sm: 15 },
+            mt: { xs: -5, sm: 8.5 },
           }}
         >
           {data.map((item, key) => (
