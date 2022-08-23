@@ -24,7 +24,6 @@ export default function App() {
         xs={12}
         sm={6}
         sx={{
-          height: { xs: 437, sm: "auto" },
           backgroundSize: "cover",
           backgroundImage: {
             xs: "url(/img/bg-xs.jpg)",
@@ -70,6 +69,7 @@ export default function App() {
               padding: 0,
               borderRadius: 0,
               border: "1px solid rgba(0, 0, 0, 0.1)",
+              display: { xs: "none", sm: "inline-flex" },
             }}
           >
             <ArrowRight />
@@ -84,11 +84,16 @@ const Text = (
   <Box
     sx={{
       mt: { xs: 31, sm: 12 },
-      mr: { xs: 11, sm: 21 },
-      ml: { xs: 3, sm: 15 },
+      pr: { xs: 10, sm: 3 },
+      pl: { xs: 3, sm: 15 },
+      pb: { xs: 9, sm: 0 },
       display: "flex",
       flexDirection: "column",
       alignItems: "flex-start",
+      background: {
+        xs: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.65%)",
+        sm: "none",
+      },
     }}
   >
     <Typography
@@ -105,9 +110,11 @@ const Text = (
       Everyday items, we have something to suit every occasion.
     </Typography>
     <Typography
-      fontWeight={400}
+      fontSize={16}
+      lineHeight="25.6px"
       color="#666666"
       variant="body1"
+      fontFamily="Avenir"
       sx={{ mb: 4, display: { xs: "none", sm: "block" } }}
     >
       At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit
