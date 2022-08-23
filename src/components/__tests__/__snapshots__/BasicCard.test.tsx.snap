@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicCard should correctly match snapshot 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+>
+  <img
+    alt="365 Signature Hoodie"
+    className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+    src="/img/bg-1.jpg"
+  />
+  <div
+    className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+    >
+      365 Signature Hoodie
+    </p>
+    <div
+      className="MuiBox-root css-asaamw"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+      >
+        €33.95
+      </p>
+      <div>
+        <span
+          className="active css-111dolv"
+          color="#99C3CC"
+        />
+        <span
+          className="css-16lu8s2"
+          color="#CC9999"
+        />
+        <span
+          className="css-1tubl60"
+          color="#CB99CC"
+        />
+        <span
+          className="css-988mqq"
+          color="#A6CC99"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

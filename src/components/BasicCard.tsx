@@ -5,12 +5,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-
-interface Props {
-  title: string;
-  price: string;
-  src: string;
-}
+import type { Product } from "types";
 
 const Circle = styled("span")`
   height: 12px;
@@ -30,17 +25,18 @@ const Circle = styled("span")`
   }
 `;
 
-export default function BasicCard({ title, price, src }: Props) {
+export default function BasicCard({ title, price, image }: Product) {
   return (
     <Card
       elevation={0}
       sx={{
-        mr: { xs: 1.5, sm: 4 },
         flex: "0 0 auto",
+        mr: { xs: 1.5, sm: 4 },
         width: { xs: 140, sm: 230 },
+        borderRadius: 0,
       }}
     >
-      <CardMedia component="img" image={src} alt={title} />
+      <CardMedia component="img" image={image} alt={title} />
       <CardContent sx={{ p: 0 }}>
         <Typography
           fontFamily="Avenir"
