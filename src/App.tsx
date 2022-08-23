@@ -6,35 +6,79 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import BasicCard from "components/BasicCard";
+import { ArrowRight } from "icons";
+import { PRODUCTS } from "data";
+import type { Product } from "types";
 import type { Theme } from "@mui/material";
 
-const data = [
-  {
-    src: "/img/bg-1.jpg",
-    title: "365 Signature Hoodie",
-    price: "€33.95",
-  },
-  {
-    src: "/img/bg-2.jpg",
-    title: "Organic Skinny High Waist Jeans",
-    price: "€33.95",
-  },
-  {
-    src: "/img/bg-3.jpg",
-    title: "Organic Skinny High Waist Jeans",
-    price: "€33.95",
-  },
-  {
-    src: "/img/bg-1.jpg",
-    title: "365 Signature Hoodie",
-    price: "€33.95",
-  },
-  {
-    src: "/img/bg-2.jpg",
-    title: "Organic Skinny High Waist Jeans",
-    price: "€33.95",
-  },
-];
+export default function App() {
+  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
+  return (
+    <Grid
+      container
+      component="main"
+      sx={{ height: { xs: "auto", sm: "100vh" }, overflowX: "hidden" }}
+    >
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        sx={{
+          height: { xs: 437, sm: "auto" },
+          backgroundSize: "cover",
+          backgroundImage: {
+            xs: "url(/img/bg-xs.jpg)",
+            sm: "url(/img/bg.jpg)",
+          },
+          backgroundRepeat: "no-repeat",
+          backgroundColor: (t) => t.palette.grey[50],
+        }}
+      >
+        {matches && Text}
+      </Grid>
+      <Grid item xs={12} sm={6} component={Paper} square>
+        {!matches && <Box pr={15}>{Text}</Box>}
+        <Box
+          sx={{
+            position: "relative",
+            ml: { xs: 3, sm: 15 },
+            mt: { xs: -5, sm: 8.5 },
+          }}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              overflowX: "scroll",
+              overflowY: "hidden",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {PRODUCTS.map((item: Product, key: number) => (
+              <BasicCard {...item} key={key} />
+            ))}
+          </Box>
+          <Button
+            color="inherit"
+            sx={{
+              position: "absolute",
+              top: 135,
+              right: 48,
+              width: 40,
+              height: 40,
+              minWidth: 0,
+              padding: 0,
+              borderRadius: 0,
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <ArrowRight />
+          </Button>
+        </Box>
+      </Grid>
+    </Grid>
+  );
+}
 
 const Text = (
   <Box
@@ -82,50 +126,3 @@ const Text = (
     </Button>
   </Box>
 );
-
-export default function App() {
-  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
-  return (
-    <Grid
-      container
-      component="main"
-      sx={{ height: { xs: "auto", sm: "100vh" }, overflowX: "hidden" }}
-    >
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        sx={{
-          height: { xs: 437, sm: "auto" },
-          backgroundSize: "cover",
-          backgroundImage: {
-            xs: "url(/img/bg-xs.jpg)",
-            sm: "url(/img/bg.jpg)",
-          },
-          backgroundRepeat: "no-repeat",
-          backgroundColor: (t) => t.palette.grey[50],
-        }}
-      >
-        {matches && Text}
-      </Grid>
-      <Grid item xs={12} sm={6} component={Paper} square>
-        {!matches && <Box pr={15}>{Text}</Box>}
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            overflowX: "scroll",
-            overflowY: "hidden",
-            whiteSpace: "nowrap",
-            ml: { xs: 3, sm: 15 },
-            mt: { xs: -5, sm: 8.5 },
-          }}
-        >
-          {data.map((item, key) => (
-            <BasicCard {...item} key={key} />
-          ))}
-        </Box>
-      </Grid>
-    </Grid>
-  );
-}

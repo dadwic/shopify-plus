@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should correctly match snapshot 1`] = `
+<main
+  className="MuiGrid-root MuiGrid-container css-1sf0oyz-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-10beu9m-MuiGrid-root"
+  />
+  <div
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 css-158xn9o-MuiPaper-root-MuiGrid-root"
+  >
+    <div
+      className="MuiBox-root css-1ajcm5g"
+    >
+      <div
+        className="MuiBox-root css-1yqka4x"
+      >
+        <h4
+          className="MuiTypography-root MuiTypography-h1 css-1rvgwix-MuiTypography-root"
+        >
+          Everyday items, we have something to suit every occasion.
+        </h4>
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-zmeafx-MuiTypography-root"
+        >
+          At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida cursus.
+        </p>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-dwje47-MuiButtonBase-root-MuiButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          Shop all everyday items
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiBox-root css-7kbvrd"
+    >
+      <div
+        className="MuiBox-root css-w9ame2"
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+        >
+          <img
+            alt="365 Signature Hoodie"
+            className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+            src="/img/bg-1.jpg"
+          />
+          <div
+            className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+            >
+              365 Signature Hoodie
+            </p>
+            <div
+              className="MuiBox-root css-asaamw"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+              >
+                €33.95
+              </p>
+              <div>
+                <span
+                  className="active css-111dolv"
+                  color="#99C3CC"
+                />
+                <span
+                  className="css-16lu8s2"
+                  color="#CC9999"
+                />
+                <span
+                  className="css-1tubl60"
+                  color="#CB99CC"
+                />
+                <span
+                  className="css-988mqq"
+                  color="#A6CC99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+        >
+          <img
+            alt="Organic Skinny High Waist Jeans"
+            className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+            src="/img/bg-2.jpg"
+          />
+          <div
+            className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+            >
+              Organic Skinny High Waist Jeans
+            </p>
+            <div
+              className="MuiBox-root css-asaamw"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+              >
+                €33.95
+              </p>
+              <div>
+                <span
+                  className="active css-111dolv"
+                  color="#99C3CC"
+                />
+                <span
+                  className="css-16lu8s2"
+                  color="#CC9999"
+                />
+                <span
+                  className="css-1tubl60"
+                  color="#CB99CC"
+                />
+                <span
+                  className="css-988mqq"
+                  color="#A6CC99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+        >
+          <img
+            alt="Organic Skinny High Waist Jeans"
+            className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+            src="/img/bg-3.jpg"
+          />
+          <div
+            className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+            >
+              Organic Skinny High Waist Jeans
+            </p>
+            <div
+              className="MuiBox-root css-asaamw"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+              >
+                €33.95
+              </p>
+              <div>
+                <span
+                  className="active css-111dolv"
+                  color="#99C3CC"
+                />
+                <span
+                  className="css-16lu8s2"
+                  color="#CC9999"
+                />
+                <span
+                  className="css-1tubl60"
+                  color="#CB99CC"
+                />
+                <span
+                  className="css-988mqq"
+                  color="#A6CC99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+        >
+          <img
+            alt="365 Signature Hoodie"
+            className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+            src="/img/bg-1.jpg"
+          />
+          <div
+            className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+            >
+              365 Signature Hoodie
+            </p>
+            <div
+              className="MuiBox-root css-asaamw"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+              >
+                €33.95
+              </p>
+              <div>
+                <span
+                  className="active css-111dolv"
+                  color="#99C3CC"
+                />
+                <span
+                  className="css-16lu8s2"
+                  color="#CC9999"
+                />
+                <span
+                  className="css-1tubl60"
+                  color="#CB99CC"
+                />
+                <span
+                  className="css-988mqq"
+                  color="#A6CC99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-f7gmfx-MuiPaper-root-MuiCard-root"
+        >
+          <img
+            alt="Organic Skinny High Waist Jeans"
+            className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+            src="/img/bg-2.jpg"
+          />
+          <div
+            className="MuiCardContent-root css-1i9wt8r-MuiCardContent-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-jqu9gp-MuiTypography-root"
+            >
+              Organic Skinny High Waist Jeans
+            </p>
+            <div
+              className="MuiBox-root css-asaamw"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 css-1j97s3x-MuiTypography-root"
+              >
+                €33.95
+              </p>
+              <div>
+                <span
+                  className="active css-111dolv"
+                  color="#99C3CC"
+                />
+                <span
+                  className="css-16lu8s2"
+                  color="#CC9999"
+                />
+                <span
+                  className="css-1tubl60"
+                  color="#CB99CC"
+                />
+                <span
+                  className="css-988mqq"
+                  color="#A6CC99"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-yt73qp-MuiButtonBase-root-MuiButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="ArrowRightIcon"
+          focusable="false"
+          viewBox="0 0 8 14"
+        >
+          <path
+            clipRule="evenodd"
+            d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L7.35355 6.64645C7.54882 6.84171 7.54882 7.15829 7.35355 7.35355L1.35355 13.3536C1.15829 13.5488 0.841709 13.5488 0.646447 13.3536C0.451184 13.1583 0.451184 12.8417 0.646447 12.6464L6.29289 7L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</main>
+`;
